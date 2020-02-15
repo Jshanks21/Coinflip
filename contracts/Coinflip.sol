@@ -2,6 +2,8 @@ pragma solidity >=0.4.21 <0.7.0;
 
 contract Coinflip {
   address public owner;
+  uint public counter = 0; // For testing only
+
   mapping(address => uint) public balances;
   mapping(address => bool) public lastFlip;
 
